@@ -10,7 +10,7 @@ class Particle {
   }
 
   finished(){
-    return(this.lifetime<0;);
+    return(this.lifetime < 0);
   }
 
   applyForce(force){
@@ -22,7 +22,7 @@ this.vel.add(this.acc);
 this.pos.add(this.vel);
 this.acc.set(0, 0);
 
-this.lifetime -= 1;
+this.lifetime -= 5;
   }
 
   show(){
@@ -32,10 +32,10 @@ fill(255, this.lifetime);
 ellipse(this.pos.x, this.pos.y, this.r * 2);
   }
 
-  edges(){
-    if(this.pos.y >= height - this.r){
-      this.pos.y = height - this.r;
-      this.vel.y *= -1;
-    }
-  }
+  // edges(){
+  //   if(this.pos.y >= height - this.r){
+  //     this.pos.y = height - this.r;
+  //     this.vel.y *= -1;
+  //   }
+  // }
 }
