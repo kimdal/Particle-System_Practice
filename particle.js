@@ -16,12 +16,14 @@ class particle {
 this.vel.add(this.acc);
 this.pos.add(this.vel);
 this.acc.set(0, 0);
+
+this.lifetime -= 1;
   }
 
   show(){
 stroke(255);
-strokeWeight(2);
-fill(255, 100);
+strokeWeight(2, this.lifetime);
+fill(255, this.lifetime);
 ellipse(this.pos.x, this.pos.y, this.r*2);
   }
 
