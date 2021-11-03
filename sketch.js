@@ -10,4 +10,9 @@ function draw() {
 
   let gravity = createVector(0, 0.2);
   particle.applyForce(gravity);
+
+  particle.update();
+  particle.edges();
+  particle.show();
+
 }
