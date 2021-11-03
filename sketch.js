@@ -19,4 +19,10 @@ for (let particle of particles){
   particle.show();
   particle.edges();
 }
+
+for (let i = particles.length-1; i--){
+  if(particles[i].finished()){
+    particles.splice(i, 1);
+  }
+}
 }
