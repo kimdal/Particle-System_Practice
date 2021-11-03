@@ -4,6 +4,8 @@ class particle {
     this.vel = createVector(0, 0);
     this.acc = createVector(0, 0);
     this.r = 16;
+
+    this.lifetime = 255;
   }
 
   applyForce(force){
