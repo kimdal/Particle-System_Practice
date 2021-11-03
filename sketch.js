@@ -5,7 +5,7 @@ function setup() {
 //   for(let i=0; i<500; i++){
 //   particles.push(new Particle(200, 200));
 // }
-let emitter = new Emitter(200, 20);
+emitter = new Emitter(200, 20);
 }
 
 function draw() {
