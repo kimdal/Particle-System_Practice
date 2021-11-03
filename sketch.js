@@ -20,7 +20,7 @@ for (let particle of particles){
   particle.edges();
 }
 
-for (let i = particles.length-1; i--){
+for (let i = particles.length-1; i>=0; i--){
   if(particles[i].finished()){
     particles.splice(i, 1);
   }
