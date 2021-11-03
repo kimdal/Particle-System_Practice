@@ -4,7 +4,7 @@ class Particle {
     this.vel = p5.Vector.random2D();
     this.vel.mult(random(1, 5));
     this.acc = createVector(0, 0);
-    this.r = 4;
+    this.r = 0.5;
 
   this.lifetime = 255;
   }
@@ -26,10 +26,10 @@ this.lifetime -= 5;
   }
 
   show(){
-stroke(255, this.lifetime);
-strokeWeight(2);
-fill(255, this.lifetime);
-ellipse(this.pos.x, this.pos.y, this.r * 2);
+stroke(0, random(0, 255), random(0, 255), this.lifetime);
+strokeWeight(0.5);
+//fill(random(0, 255),random(0, 255), random(0, 255), this.lifetime);
+line(this.pos.x, this.pos.y, this.r * 2, this.r);
   }
 
   // edges(){
