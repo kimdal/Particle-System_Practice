@@ -2,7 +2,7 @@ let particles = [];
 
 function setup() {
   createCanvas(400, 400);
-//   for(let i=0; i<100; i++){
+//   for(let i=0; i<500; i++){
 //   particles.push(new Particle(200, 200));
 // }
 }
