@@ -2,6 +2,7 @@ class Particle {
   constructor(x, y){
     this.pos = createVector(x, y);
     this.vel = p5.Vector.random2D();
+    this.vel.mult(random(1, 5));
     this.acc = createVector(0, 0);
     this.r = 4;
 
