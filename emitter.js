@@ -6,7 +6,7 @@ class Emitter{
 
   emit(num){
       for(let i=0; i<num; i++){
-      this.particles.push(new Particle(this.pos.x, this.pos.y));
+      this.particles.push(new Particle(mouseX, mouseY));
     }
   }
 
