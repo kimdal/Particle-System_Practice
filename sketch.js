@@ -26,6 +26,7 @@ function draw() {
 //     particles.splice(i, 1);
 //   }
 // }
+emitter.emit(5);
 emitter.show();
 emitter.update();
 }
