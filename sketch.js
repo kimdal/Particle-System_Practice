@@ -6,7 +6,7 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  background(0);
 
   let gravity = createVector(0, 0.2);
   particle.applyForce(gravity);
