@@ -1,2 +1,2 @@
-# Particle-System_Practice
+# Particle-System
 Particle System training
