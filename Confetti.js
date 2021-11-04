@@ -1,5 +1,5 @@
 class Confetti extends Particle {
-  constructor(x, y);{
+  constructor(x, y){
   super(x, y);
   this.angle = random(TWO_PI);
 }
@@ -10,7 +10,7 @@ show(){
   push();
   translate(this.x, this.y);
   rotate(this.angle);
-  square(0, 0, this.r*2);
+  square(0, 0, this.r * 2);
   pop();
 }
 }
