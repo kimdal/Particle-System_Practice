@@ -6,9 +6,13 @@ class Emitter{
 
   emit(num){
       for(let i=0; i<num; i++){
+        if(random(1)<0.5){
       this.particles.push(new Particle(this.pos.x, this.pos.y));
+    } else {
+        this.particles.push(new Confetti(this.pos.x, this.pos.y));
     }
   }
+}
 
 update(){
   for (let particle of this.particles){
